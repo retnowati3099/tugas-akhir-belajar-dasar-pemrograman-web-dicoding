@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Retno Wati">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <h1 onmouseover="typeWriter()" onmouseout="hideText()"><a href="#beranda">LC</a></h1>
+            <span id="typing"></span>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#beranda" class="link">Beranda</a></li>
+                <li><a href="#tutorial" class="link">Tutorial</a></li>
+                <li><a href="#artikel" class="link">Artikel</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" id= "hamburger" onclick="menuFunction()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <article>
+                <h1 class="home-title center" id="beranda">Selamat datang di website LearnCode</h1>
+                <h3 class="center">Tingkatkan skill kodingmu untuk meraih karir impianmu</h3>
+                <p class="center">Website LearnCode menyajikan barbagai macam tutorial pemrograman yang dapat diakses secara gratis. Website ini sangat cocok bagi para pemula yang ingin belajar koding dan ingin memperdalam kemampuan kodingnya. Materi disajikan dalam bentuk bacaan elektronik dan didesain sedemikian rupa sehingga dapat dengan mudah untuk dipelajari. Tidak hanya itu saja, disajikan pula artikel terupdate terkait pemrograman untuk menambah wawasan. Jadi, jangan lewatkan kesempatan belajar melalui website ini untuk meningkatkan kemampuan koding kamu.</p>
+            </article>
+            <article>
+                <h2 class="center subjudul" id="tutorial">Tutorial</h2>
+                <div class="center line"></div>
+                <div class="tutorial-container">
+                    <div class="card-tutorial">
+                        <div class="title-tutorial center">HTML</div>
+                        <div class="text-btn">
+                            <div>Bahasa untuk membangun halaman web</div>
+                            <button class="btn">Belajar Tutorial</button>
+                        </div>
+                    </div>
+                    <div class="card-tutorial">
+                        <div class="title-tutorial center">CSS</div>
+                        <div class="text-btn">
+                            <div>Bahasa untuk <i>styling</i> halaman web</div>
+                            <button class="btn">Belajar Tutorial</button>
+                        </div>
+                    </div>
+                    <div class="card-tutorial">
+                        <div class="title-tutorial center">JavaScript</div>
+                        <div class="text-btn">
+                            <div>Bahasa untuk pemrograman halaman web</div>
+                            <button class="btn">Belajar Tutorial</button>
+                        </div>
+                    </div>
+                    <div class="card-tutorial">
+                        <div class="title-tutorial center">Python</div>
+                        <div class="text-btn">
+                            <div>Bahasa pemrograman populer</div>
+                            <button class="btn">Belajar Tutorial</button>
+                        </div>
+                    </div>
+                    <div class="card-tutorial">
+                        <div class="title-tutorial center">SQL</div>
+                        <div class="text-btn">
+                            <div>Bahasa untuk mengakses database</div>
+                            <button class="btn">Belajar Tutorial</button>
+                        </div>
+                    </div>
+                    <div class="card-tutorial">
+                        <div class="title-tutorial center">PHP</div>
+                        <div class="text-btn">
+                            <div>Bahasa pemrograman web server</div>
+                            <button class="btn">Belajar Tutorial</button>
+                        </div>
+                    </div>
+                    <div class="card-tutorial">
+                        <div class="title-tutorial center">jQuery</div>
+                        <div class="text-btn">
+                            <div>Salah satu <i>library</i> JavaScript untuk membangun halaman web</div>
+                            <button class="btn">Belajar Tutorial</button>
+                        </div>
+                    </div>
+                    <div class="card-tutorial">
+                        <div class="title-tutorial center">Bootstrap</div>
+                        <div class="text-btn">
+                            <div>Sebuah <i>framework</i> CSS untuk mendesain halaman web menjadi lebih baik</div>
+                            <button class="btn">Belajar Tutorial</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h2 class="center subjudul" id="artikel">Artikel</h2>
+                <div class="center line"></div>
+                <div class="article-container">
+                    <div class="card-article">
+                        <div class="image">
+                            <img src="./assets/jackson-sophat-_t-l5FFH8VA-unsplash.jpg" class="img-fluid rounded-top" alt="">
+                        </div>
+                        <div class="content-container">
+                            <h3 class="title-article">Apa itu HTML?</h3>
+                            <p class="content-article">Hypertext Markup Language adalah bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets dan bahasa skrip lainnya seperti JavaScript, VBScript, dan PHP. Kode HTML memastikan format teks dan gambar yang tepat untuk browser Internet. Tanpa HTML, browser tidak akan tahu bagaimana menampilkan teks sebagai elemen atau memuat gambar atau elemen lainnya. HTML juga menyediakan struktur dasar halaman, di mana Cascading Style Sheets dihamparkan untuk mengubah tampilannya.</p>
+                        </div>
+                    </div>
+                    <div class="card-article">
+                        <div class="image">
+                            <img src="./assets/jackson-sophat-_t-l5FFH8VA-unsplash.jpg" class="img-fluid rounded-top" alt="">
+                        </div>
+                        <div class="content-container">
+                            <h3 class="title-article">Apa itu CSS?</h3>
+                            <p class="content-article">Cascading Style Sheet merupakan aturan untuk mengatur beberapa komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam. CSS bukan merupakan bahasa pemrograman. CSS berfungsi untuk memisahkan konten dari tampilan visualnya di situs. CSS dibuat dan dikembangkan oleh W3C (World Wide Web Consortium) pada tahun 1996 untuk alasan yang sederhana. </p>
+                        </div>
+                    </div>                      
+                    </div>
+                    <div class="card-article">
+                        <div class="image">
+                            <img src="./assets/jackson-sophat-_t-l5FFH8VA-unsplash.jpg" class="img-fluid rounded-top" alt="">
+                        </div>
+                        <div class="content-container">
+                            <h3 class="title-article">Apa itu JavaScript?</h3>
+                            <p class="content-article">JavaScript adalah suatu bahasa pemrograman tingkat tinggi dan dinamis. JavaScript populer di internet dan dapat bekerja di sebagian besar penjelajah web populer seperti Google Chrome, Internet Explorer, Mozilla Firefox, Netscape dan Opera. Kode JavaScript dapat disisipkan dalam halaman web menggunakan tag script.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <aside>
+            <img src="./assets/Retno-Wati.jpg" alt="Profil Retno Wati">
+            <div class="biodata">
+                <div>Nama</div>
+                <div>Retno Wati</div>
+                <div>No. HP</div>
+                <div>082314449263</div>
+                <div>Email</div>
+                <div>retnowati3099@gmail.com</div>
+                <div>Alamat</div>
+                <div>Nasri RT 002 / RW 006, Giring, Paliyan, Gunungkidul, Daerah Istimewa Yogyakarta, Kode Pos: 55871</div> 
+            </div>
+        </aside>
+    </main>    
+    <footer>
+        <div class="sosmed-container">
+            <a href="#youtube"><i class="fa-brands fa-youtube""></i></a>
+            <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        &#169 Copyright Retno Wati 2023</footer>
+    <script src="https://kit.fontawesome.com/27ecc0ac1e.js" crossorigin="anonymous"></script>
+    <script src="./listFunctions.js"></script>
+</body>
+</html>
